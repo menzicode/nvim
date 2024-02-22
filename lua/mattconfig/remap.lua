@@ -23,3 +23,4 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- exits a search (also x)
 vim.keymap.set("n", "ss", ":noh")
 
+-- testing Git
