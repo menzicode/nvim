@@ -15,7 +15,12 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup( {
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
-	"ThePrimeagen/harpoon",
+    "rktjmp/lush.nvim",
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
 	"mbbill/undotree",
 	"tpope/vim-fugitive",
 	{'williamboman/mason.nvim'},

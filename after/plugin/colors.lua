@@ -25,9 +25,9 @@ require('text-to-colorscheme').setup {
 	 "#8be9fd",
 	 "#6b708e",
       	   }
-	}
-
-  }
+	},
+  },
+  default_palette = "nazi germany"
 }
 
 vim.api.nvim_create_user_command('CSRP', function()
