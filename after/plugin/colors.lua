@@ -8,12 +8,12 @@ end
 require('text-to-colorscheme').setup {
 
   ai = {
-    openai_api_key = "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",
+    openai_api_key = OAI_KEY
   },
   hex_palettes = {
 	{
-	name = "nazi germany",
-    	background_mode = "dark",
+	name = "germany",
+	background_mode = "dark",
 	background = "#282828",
 	foreground = "#f8f8f2",
 	accents = {
@@ -27,7 +27,7 @@ require('text-to-colorscheme').setup {
       	   }
 	},
   },
-  default_palette = "nazi germany"
+  default_palette = "germany"
 }
 
 vim.api.nvim_create_user_command('CSRP', function()
