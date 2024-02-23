@@ -2,8 +2,10 @@ vim.g.mapleader = " "
 
 -- opens file explorer
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
 -- esc insert mode
 vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set("v", "jj", "<Esc>")
 
 -- in visual mode, move line up (k) or down (j)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -11,6 +13,7 @@ vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
 
 -- append next line to end of this line
 vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "gJ", "mzgJ`z")
 
 -- tab halfway up/down page
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -21,11 +24,21 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- exits a search (also x)
-vim.keymap.set("n", "ss", ":noh")
+vim.keymap.set("n", "ss", ":noh<CR>")
 
-<<<<<<< HEAD
--- testing Gat
-=======
--- testing Get
--- BOOP
->>>>>>> Git2
+-- go down/up by 10 lines
+vim.keymap.set("n", "<C-j>", "10jzz")
+vim.keymap.set("n", "<C-k>", "10kzz")
+
+-- insert/delete lines
+vim.keymap.set("n", "+", "o<esc>")
+vim.keymap.set("n", "_", "dd")
+
+-- make changing within text object easier
+vim.keymap.set("n", "c\"", "ci\"")
+vim.keymap.set("n", "c)", "ci)")
+
+-- make changing within text object easier
+vim.keymap.set("n", "<C-+>", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>--", ":tabc<CR>")
+
