@@ -16,6 +16,10 @@ require("lazy").setup( {
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
     "rktjmp/lush.nvim",
+    "chrisbra/Colorizer",
+    {
+        "ellisonleao/gruvbox.nvim", priority =1000, config = true
+    },
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
@@ -48,7 +52,7 @@ require("lazy").setup( {
 		"rose-pine/neovim", 
 		name = "rose-pine",
 		lazy = true
-	}, 
 	},
-	{}	
+	},
+	{}
 	)
