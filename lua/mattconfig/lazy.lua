@@ -11,6 +11,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.o.termguicolors = true
+
 
 require("lazy").setup( {
 	"nvim-lua/plenary.nvim",
@@ -45,6 +47,25 @@ require("lazy").setup( {
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+    {
+        "rcarriga/nvim-notify",
+        config = function()
+          require("notify").setup({
+            enabled = true,
+          })
+        end
+    },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equalent to setup({}) function
+    },
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
     "folke/zen-mode.nvim",
 	"mbbill/undotree",
 	"tpope/vim-fugitive",
@@ -77,3 +98,5 @@ require("lazy").setup( {
 	},
 	{}
 	)
+
+vim.notify = require("notify")

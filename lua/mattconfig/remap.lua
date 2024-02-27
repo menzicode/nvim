@@ -47,3 +47,8 @@ vim.keymap.set("n", "<leader>--", ":tabc<CR>")
 
 -- Toggle ZenMode
 vim.keymap.set("n", "<leader>zm", ":ZenMode<CR>")
+
+-- Buffer Management
+vim.keymap.set("n", "<leader>bp", ":bprev<CR>")
+vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
+vim.keymap.set("n", "<leader>bd", ":bd<CR>")
