@@ -18,6 +18,26 @@ require("lazy").setup( {
     "rktjmp/lush.nvim",
     "chrisbra/Colorizer",
     {
+        "folke/todo-comments.nvim",
+        lazy = false,
+        config = function()
+            require("todo-comments").setup {
+            }
+        end
+    },
+    {
+        "folke/trouble.nvim",
+         dependencies = { "nvim-tree/nvim-web-devicons" },
+         opts = {
+
+         },
+    },
+    {
+        "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap" }
+    },
+    "theHamsta/nvim-dap-virtual-text",
+    "leoluz/nvim-dap-go",
+    {
         "ellisonleao/gruvbox.nvim", priority =1000, config = true
     },
     {
@@ -25,6 +45,7 @@ require("lazy").setup( {
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+    "folke/zen-mode.nvim",
 	"mbbill/undotree",
 	"tpope/vim-fugitive",
 	{'williamboman/mason.nvim'},
@@ -43,13 +64,13 @@ require("lazy").setup( {
 		name = "text-to-colorscheme",
 		lazy = true
 	},
-	{ 
+	{
 		"folke/tokyonight.nvim",
 		name = "tokyonight",
 		lazy = true
 	},
 	{
-		"rose-pine/neovim", 
+		"rose-pine/neovim",
 		name = "rose-pine",
 		lazy = true
 	},

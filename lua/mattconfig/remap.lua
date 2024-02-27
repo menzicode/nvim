@@ -45,3 +45,5 @@ vim.keymap.set("n", "y\'", "yi\'")
 vim.keymap.set("n", "<C-+>", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>--", ":tabc<CR>")
 
+-- Toggle ZenMode
+vim.keymap.set("n", "<leader>zm", ":ZenMode<CR>")
