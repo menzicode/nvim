@@ -1,2 +1,3 @@
 require("mattconfig")
-vim.cmd('colorscheme rose-pine')
+-- vim.cmd('colorscheme tokyo')
+vim.cmd('colorscheme carbonfox')

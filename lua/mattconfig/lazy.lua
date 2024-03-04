@@ -19,6 +19,12 @@ require("lazy").setup( {
 	"nvim-telescope/telescope.nvim",
     "rktjmp/lush.nvim",
     "chrisbra/Colorizer",
+    { "EdenEast/nightfox.nvim" },
+    {
+        "nvim-zh/colorful-winsep.nvim",
+        config = true,
+        event = { "WinNew "},
+    },
     {
         "folke/todo-comments.nvim",
         lazy = false,

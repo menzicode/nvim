@@ -6,5 +6,5 @@ vim.keymap.set('n', '<leader>ps', function()
 end)
 
 -- Search errors
-vim.keymap.set("n", "<leader>tn", ":Telescope notify<CR>")
-vim.keymap.set("n", "<leader>tb", ":Telescope buffers<CR>")
+vim.keymap.set("n", "<leader>pn", ":Telescope notify<CR>")
+vim.keymap.set("n", "<leader>pb", ":Telescope buffers<CR>")

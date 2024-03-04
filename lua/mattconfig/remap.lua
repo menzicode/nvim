@@ -5,6 +5,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- esc insert mode
 vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set("i", "<C-j>", "<Esc>A")
 
 -- in visual mode, move line up (k) or down (j)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -41,9 +42,14 @@ vim.keymap.set("n", "y\"", "yi\"")
 vim.keymap.set("n", "y)", "yi)")
 vim.keymap.set("n", "y\'", "yi\'")
 
--- make changing within text object easier
-vim.keymap.set("n", "<C-+>", ":tabnew<CR>")
+-- open/close tab
+vim.keymap.set("n", "<leader>++", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>--", ":tabc<CR>")
+
+-- window management
+vim.keymap.set("n", "<leader>wp", "<C-w>+")
+vim.keymap.set("n", "<leader>wm", "<C-w>-")
+
 
 -- Toggle ZenMode
 vim.keymap.set("n", "<leader>zm", ":ZenMode<CR>")

@@ -156,6 +156,22 @@ require("gruvbox").setup({
 })
 
 
+vim.api.nvim_create_user_command('CSNF', function()
+	vim.cmd('colorscheme nightfox')
+end, {})
+
+vim.api.nvim_create_user_command('CSTF', function()
+	vim.cmd('colorscheme terafox')
+end, {})
+
+vim.api.nvim_create_user_command('CSCF', function()
+	vim.cmd('colorscheme carbonfox')
+end, {})
+
+vim.api.nvim_create_user_command('CSNDF', function()
+	vim.cmd('colorscheme nordfox')
+end, {})
+
 vim.api.nvim_create_user_command('CSRP', function()
 	vim.cmd('colorscheme rose-pine')
 end, {})
