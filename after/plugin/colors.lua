@@ -45,7 +45,7 @@ require('text-to-colorscheme').setup {
       name = "The Lord of the Rings",
       background_mode = "dark",
       background = "#1c1c1c",
-      foreground = "#d4c7a8",
+      foreground = "#d4c7a8"
       accents = {
          "#698674",
          "#e6a15b",
