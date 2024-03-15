@@ -25,7 +25,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- exits a search (also x)
-vim.keymap.set("n", "ss", ":noh<CR>")
+vim.keymap.set("n", "<leader>ss", ":noh<CR>")
 
 -- go down/up by 10 lines
 vim.keymap.set("n", "<C-j>", "10jzz")
@@ -51,7 +51,6 @@ vim.keymap.set("n", "<leader>--", ":tabc<CR>")
 vim.keymap.set("n", "<leader>wp", "<C-w>+")
 vim.keymap.set("n", "<leader>wm", "<C-w>-")
 
-
 -- Toggle ZenMode
 vim.keymap.set("n", "<leader>zm", ":ZenMode<CR>")
 
@@ -59,3 +58,11 @@ vim.keymap.set("n", "<leader>zm", ":ZenMode<CR>")
 vim.keymap.set("n", "<leader>bp", ":bprev<CR>")
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
 vim.keymap.set("n", "<leader>bd", ":bd<CR>")
+
+-- Break out from inside brackets
+vim.keymap.set("n", "<leader>mv}", "0f{a<CR><Esc>f}i<CR><Esc>k")
+vim.keymap.set("n", "<leader>mv)", "0f(a<CR><Esc>f)i<CR><Esc>k")
+
+-- Add Brackets
+vim.keymap.set("n", "<leader>ad}", "^i{<CR><Esc>A<CR>}<Esc>")
+vim.keymap.set("n", "<leader>ad)", "^i(<CR><Esc>A<CR>)<Esc>")

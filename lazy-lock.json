@@ -1,6 +1,7 @@
 {
   "Colorizer": { "branch": "master", "commit": "7db0e0dd8adfccab35655f5b6db805caa0fef49a" },
   "LuaSnip": { "branch": "master", "commit": "f3b3d3446bcbfa62d638b1903ff00a78b2b730a1" },
+  "catppuccin": { "branch": "main", "commit": "045e3499d9ec8d84635fb08877ae44fd33f6a38d" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
   "colorful-winsep.nvim": { "branch": "alpha", "commit": "bd836204f85baa4a787d3a9efee57fc000737c9a" },
   "gruvbox.nvim": { "branch": "main", "commit": "6e4027ae957cddf7b193adfaec4a8f9e03b4555f" },

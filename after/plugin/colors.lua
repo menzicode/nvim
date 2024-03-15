@@ -12,6 +12,21 @@ require('text-to-colorscheme').setup {
   },
   hex_palettes = {
    {
+      name = "Jungle",
+      background_mode = "dark",
+      background = "#053705",
+      foreground = "#86cd86",
+      accents = {
+         "#419441",
+         "#73cd73",
+         "#b8e7b8",
+         "#94da94",
+         "#4dc04d",
+         "#1fa81f",
+         "#0e940e",
+      }
+    },
+   {
       name = "high-contrast monochrome dark theme ",
       background_mode = "dark",
       background = "#000000",
@@ -45,7 +60,7 @@ require('text-to-colorscheme').setup {
       name = "The Lord of the Rings",
       background_mode = "dark",
       background = "#1c1c1c",
-      foreground = "#d4c7a8"
+      foreground = "#d4c7a8",
       accents = {
          "#698674",
          "#e6a15b",
@@ -155,6 +170,9 @@ require("gruvbox").setup({
   transparent_mode = false,
 })
 
+vim.api.nvim_create_user_command('CSCP', function()
+	vim.cmd('colorscheme catppuccin')
+end, {})
 
 vim.api.nvim_create_user_command('CSNF', function()
 	vim.cmd('colorscheme nightfox')
@@ -162,6 +180,11 @@ end, {})
 
 vim.api.nvim_create_user_command('CSTF', function()
 	vim.cmd('colorscheme terafox')
+end, {})
+
+vim.api.nvim_create_user_command('CSDF', function()
+    vim.o.background = "light"
+	vim.cmd('colorscheme dayfox')
 end, {})
 
 vim.api.nvim_create_user_command('CSCF', function()
@@ -181,7 +204,20 @@ vim.api.nvim_create_user_command('CSGB', function()
 end, {})
 
 vim.api.nvim_create_user_command('CSTN', function()
-	vim.cmd('colorscheme tokyonight')
+	vim.cmd('colorscheme tokyonight-night')
+end, {})
+
+vim.api.nvim_create_user_command('CSTD', function()
+    vim.o.background = "light"
+	vim.cmd('colorscheme tokyonight-day')
+end, {})
+
+vim.api.nvim_create_user_command('CSTS', function()
+	vim.cmd('colorscheme tokyonight-storm')
+end, {})
+
+vim.api.nvim_create_user_command('CSTM', function()
+	vim.cmd('colorscheme tokyonight-moon')
 end, {})
 
 vim.api.nvim_create_user_command('CSAI', function()

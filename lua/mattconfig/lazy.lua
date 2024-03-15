@@ -17,9 +17,14 @@ vim.o.termguicolors = true
 require("lazy").setup( {
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
-    "rktjmp/lush.nvim",
     "chrisbra/Colorizer",
-    { "EdenEast/nightfox.nvim" },
+    "rktjmp/lush.nvim",
+    {
+        "catppuccin/nvim", name = "catppuccin", priority = 1000,
+    },
+    {
+        "EdenEast/nightfox.nvim"
+    },
     {
         "nvim-zh/colorful-winsep.nvim",
         config = true,
@@ -75,18 +80,33 @@ require("lazy").setup( {
     "folke/zen-mode.nvim",
 	"mbbill/undotree",
 	"tpope/vim-fugitive",
-	{'williamboman/mason.nvim'},
-	{'williamboman/mason-lspconfig.nvim'},
-	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
-	{'neovim/nvim-lspconfig'},
-	{'hrsh7th/cmp-nvim-lsp'},
-	{'hrsh7th/nvim-cmp'},
+    {
+        'williamboman/mason.nvim'
+    },
+	{
+        'williamboman/mason-lspconfig.nvim'
+    },
+	{
+        'VonHeikemen/lsp-zero.nvim',
+		branch = 'v3.x'
+    },
+	{
+        'neovim/nvim-lspconfig'
+    },
+	{
+        'hrsh7th/cmp-nvim-lsp'
+    },
+	{
+        'hrsh7th/nvim-cmp'
+    },
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",
         lazy = false,
     },
-    {'L3MON4D3/LuaSnip'},
+    {
+        'L3MON4D3/LuaSnip'
+    },
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate"
