@@ -66,3 +66,6 @@ vim.keymap.set("n", "<leader>mv)", "0f(a<CR><Esc>f)i<CR><Esc>k")
 -- Add Brackets
 vim.keymap.set("n", "<leader>ad}", "^i{<CR><Esc>A<CR>}<Esc>")
 vim.keymap.set("n", "<leader>ad)", "^i(<CR><Esc>A<CR>)<Esc>")
+
+-- Open Cheat Sheet
+vim.keymap.set("n", "<leader>??", "<C-w>s:e ~/Notes/cs/CheatSheets.norg<CR>", {noremap = true, silent = true})
