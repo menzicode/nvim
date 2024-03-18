@@ -1,3 +1,3 @@
 require("mattconfig")
--- vim.cmd('colorscheme tokyo')
-vim.cmd('colorscheme tokyonight')
+vim.cmd('colorscheme tokyonight-moon')
+emptyBG()

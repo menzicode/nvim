@@ -23,6 +23,9 @@ require("lazy").setup( {
         "catppuccin/nvim", name = "catppuccin", priority = 1000,
     },
     {
+        "rebelot/kanagawa.nvim", name = "kanagawa"
+    },
+    {
         "EdenEast/nightfox.nvim"
     },
     {
@@ -52,6 +55,13 @@ require("lazy").setup( {
     "leoluz/nvim-dap-go",
     {
         "ellisonleao/gruvbox.nvim", priority =1000, config = true
+    },
+    {
+        "letieu/harpoon-lualine",
+        dependencies = {
+            "ThePrimeagen/harpoon",
+            branch = "harpoon2",
+        }
     },
     {
         "ThePrimeagen/harpoon",

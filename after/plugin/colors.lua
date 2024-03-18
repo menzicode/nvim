@@ -24,7 +24,7 @@ require('text-to-colorscheme').setup {
          "#4dc04d",
          "#1fa81f",
          "#0e940e",
-      }
+      },
     },
    {
       name = "high-contrast monochrome dark theme ",
@@ -39,7 +39,7 @@ require('text-to-colorscheme').setup {
          "#666666",
          "#d0d0d0",
          "#b0b0b0",
-      }
+      },
    },
    {
       name = "Star Wars",
@@ -54,7 +54,7 @@ require('text-to-colorscheme').setup {
          "#ffd866",
          "#ff6188",
          "#fc9867",
-      }
+      },
    },
    {
       name = "The Lord of the Rings",
@@ -69,7 +69,7 @@ require('text-to-colorscheme').setup {
          "#cb4b16",
          "#6c71c4",
          "#dc322f",
-      }
+      },
    },
    {
       name = "Swiss Flag",
@@ -84,7 +84,7 @@ require('text-to-colorscheme').setup {
          "#fff2f2",
          "#ffacac",
          "#ffdede",
-      }
+      },
    },
    {
       name = "Roman Empire",
@@ -99,7 +99,7 @@ require('text-to-colorscheme').setup {
          "#e6a15b",
          "#d57150",
          "#fa345e",
-      }
+      },
    },
    {
       name = "What the consoles in the death star would look like for empire programmers working under the guidance of darth vader",
@@ -114,7 +114,7 @@ require('text-to-colorscheme').setup {
          "#a9a9a9",
          "#d3d3d3",
          "#dc143c",
-      }
+      },
    },
    {
       name = "HiContrast",
@@ -137,10 +137,10 @@ require('text-to-colorscheme').setup {
          "#66ff99",
          -- directory names, errors
          "#fa345e",
-      }
+      },
    },
   },
-  default_palette = "Roman Empire"
+  default_palette = "Star Wars"
 }
 
 
