@@ -20,6 +20,10 @@ require("lazy").setup( {
     "chrisbra/Colorizer",
     "rktjmp/lush.nvim",
     {
+        'wakatime/vim-wakatime',
+        lazy = false
+    },
+    {
         "catppuccin/nvim", name = "catppuccin", priority = 1000,
     },
     {
