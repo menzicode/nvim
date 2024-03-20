@@ -172,56 +172,69 @@ require("gruvbox").setup({
 
 vim.api.nvim_create_user_command('CSCP', function()
 	vim.cmd('colorscheme catppuccin')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSNF', function()
 	vim.cmd('colorscheme nightfox')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSTF', function()
 	vim.cmd('colorscheme terafox')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSDF', function()
     vim.o.background = "light"
 	vim.cmd('colorscheme dayfox')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSCF', function()
 	vim.cmd('colorscheme carbonfox')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSNDF', function()
 	vim.cmd('colorscheme nordfox')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSRP', function()
 	vim.cmd('colorscheme rose-pine')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSGB', function()
 	vim.cmd('colorscheme gruvbox')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSTN', function()
 	vim.cmd('colorscheme tokyonight-night')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSTD', function()
     vim.o.background = "light"
 	vim.cmd('colorscheme tokyonight-day')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSTS', function()
 	vim.cmd('colorscheme tokyonight-storm')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSTM', function()
 	vim.cmd('colorscheme tokyonight-moon')
+    emptyBG()
 end, {})
 
 vim.api.nvim_create_user_command('CSAI', function()
 	vim.cmd('colorscheme text-to-colorscheme')
+    emptyBG()
 end, {})
 
 

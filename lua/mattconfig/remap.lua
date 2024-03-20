@@ -67,5 +67,11 @@ vim.keymap.set("n", "<leader>mv)", "0f(a<CR><Esc>f)i<CR><Esc>k")
 vim.keymap.set("n", "<leader>ad}", "^i{<CR><Esc>A<CR>}<Esc>")
 vim.keymap.set("n", "<leader>ad)", "^i(<CR><Esc>A<CR>)<Esc>")
 
+-- Put after comma on newline 
+vim.keymap.set("n", "<leader>,n", "f,a<CR><Esc>")
+
 -- Open Cheat Sheet
 vim.keymap.set("n", "<leader>??", "<C-w>s:e ~/Notes/cs/CheatSheets.norg<CR>", {noremap = true, silent = true})
+-- Open todo
+vim.keymap.set("n", "<leader><C-t>", "<C-w>v:e ~/Notes/cs/Todo.norg<CR>", {noremap = true, silent = true})
+
