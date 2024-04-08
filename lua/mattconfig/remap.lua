@@ -32,8 +32,12 @@ vim.keymap.set("n", "<C-j>", "10jzz")
 vim.keymap.set("n", "<C-k>", "10kzz")
 
 -- insert/delete lines
-vim.keymap.set("n", "+", "o<esc>")
+vim.keymap.set("n", "+", "O<esc>")
 vim.keymap.set("n", "_", "dd")
+
+-- delete line to register x, insert line from register x (excel delete/insert behavior)
+vim.keymap.set("n", "<C-p>", "O<esc>\"xPjdd")
+vim.keymap.set("n", "<C-x>", "\"xdd")
 
 -- make changing within text object easier
 vim.keymap.set("n", "c\"", "ci\"")
@@ -68,10 +72,13 @@ vim.keymap.set("n", "<leader>ad}", "^i{<CR><Esc>A<CR>}<Esc>")
 vim.keymap.set("n", "<leader>ad)", "^i(<CR><Esc>A<CR>)<Esc>")
 
 -- Put after comma on newline 
-vim.keymap.set("n", "<leader>,n", "f,a<CR><Esc>")
+vim.keymap.set("n", "<leader>nl", "f,a<CR><Esc>")
+
+vim.keymap.set("n", "<leader> ", "a <Esc>")
 
 -- Open Cheat Sheet
 vim.keymap.set("n", "<leader>??", "<C-w>s:e ~/Notes/cs/CheatSheets.norg<CR>", {noremap = true, silent = true})
+
 -- Open todo
 vim.keymap.set("n", "<leader><C-t>", "<C-w>v:e ~/Notes/cs/Todo.norg<CR>", {noremap = true, silent = true})
 

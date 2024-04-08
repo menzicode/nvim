@@ -20,6 +20,15 @@ require("lazy").setup( {
     "chrisbra/Colorizer",
     "rktjmp/lush.nvim",
     {
+        "tpope/vim-commentary"
+    },
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
+    {
         'wakatime/vim-wakatime',
         lazy = false
     },
