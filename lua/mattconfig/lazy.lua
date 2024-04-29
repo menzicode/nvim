@@ -13,13 +13,27 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.o.termguicolors = true
 
-
 require("lazy").setup( {
+    {
+        "github/copilot.vim",
+    },
+    {
+        "CopilotC-Nvim/CopilotChat.nvim",
+        branch = "canary",
+        dependencies = {
+            {"github/copilot.vim"},
+            {"nvim-lua/plenary.nvim"},
+        },
+        opts = {
+            debug = true,
+        }
+    },
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
     "chrisbra/Colorizer",
     "rktjmp/lush.nvim",
     {
+        -- gcc motion to comment a line e.g. 4 gcc comments 4 lines
         "tpope/vim-commentary"
     },
     {
@@ -68,13 +82,6 @@ require("lazy").setup( {
     "leoluz/nvim-dap-go",
     {
         "ellisonleao/gruvbox.nvim", priority =1000, config = true
-    },
-    {
-        "letieu/harpoon-lualine",
-        dependencies = {
-            "ThePrimeagen/harpoon",
-            branch = "harpoon2",
-        }
     },
     {
         "ThePrimeagen/harpoon",

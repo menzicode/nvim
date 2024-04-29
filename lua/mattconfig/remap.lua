@@ -35,9 +35,10 @@ vim.keymap.set("n", "<C-k>", "10kzz")
 vim.keymap.set("n", "+", "O<esc>")
 vim.keymap.set("n", "_", "dd")
 
--- delete line to register x, insert line from register x (excel delete/insert behavior)
-vim.keymap.set("n", "<C-p>", "O<esc>\"xPjdd")
-vim.keymap.set("n", "<C-x>", "\"xdd")
+-- delete line to system register, insert line from system register (excel delete/insert behavior)
+vim.keymap.set("n", "<C-p>", "O<esc>\"+Pjdd")
+vim.keymap.set("n", "<C-x>", "\"+dd", {noremap = true, silent = true})
+vim.keymap.set("n", "<C-y>", "\"+yy")
 
 -- make changing within text object easier
 vim.keymap.set("n", "c\"", "ci\"")
