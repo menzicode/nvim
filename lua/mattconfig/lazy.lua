@@ -84,6 +84,13 @@ require("lazy").setup( {
         "ellisonleao/gruvbox.nvim", priority =1000, config = true
     },
     {
+        "letieu/harpoon-lualine",
+        dependencies = {
+            "ThePrimeagen/harpoon",
+            branch = "harpoon2",
+        }
+    },
+    {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
