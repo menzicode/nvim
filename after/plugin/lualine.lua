@@ -20,7 +20,7 @@ require('lualine').setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'buffers', 'harpoon2'},
+    lualine_c = {'buffers'},
     lualine_x = {'filename'},
     lualine_y = {'progress'},
     lualine_z = {'location'}

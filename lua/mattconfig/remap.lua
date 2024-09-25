@@ -83,3 +83,15 @@ vim.keymap.set("n", "<leader>??", "<C-w>s:e ~/Notes/cs/CheatSheets.norg<CR>", {n
 -- Open todo
 vim.keymap.set("n", "<leader><C-t>", "<C-w>v:e ~/Notes/cs/Todo.norg<CR>", {noremap = true, silent = true})
 
+-- Copilot
+vim.keymap.set("v", "<leader>ce", ":CopilotChatExplain<CR>", {noremap = true, silent = true})
+vim.keymap.set("v", "<leader>cf", ":CopilotChatFix<CR>", {noremap = true, silent = true})
+vim.keymap.set("v", "<leader>cr", ":CopilotChatReview<CR>", {noremap = true, silent = true})
+vim.keymap.set("v", "<leader>co", ":CopilotChatOptimize<CR>", {noremap = true, silent = true})
+vim.keymap.set("v", "<leader>cc", ":CopilotChat<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>ce", "ggVG:CopilotChatExplain<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>cf", "ggVG:CopilotChatFix<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>cr", "ggVG:CopilotChatReview<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>co", "ggVG:CopilotChatOptimize<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>cc", "ggVG:CopilotChat<CR>", {noremap = true, silent = true})
+
