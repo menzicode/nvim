@@ -19,28 +19,6 @@ require("lazy").setup( {
       event = "VeryLazy",
     },
     {
-      "yetone/avante.nvim",
-      event = "VeryLazy",
-      opts = {
-        -- add any opts here
-      },
-      dependencies = {
-        "stevearc/dressing.nvim",
-        "nvim-lua/plenary.nvim",
-        "MunifTanjim/nui.nvim",
-        --- The below dependencies are optional,
-        "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-        {
-          -- Make sure to setup it properly if you have lazy=true
-          'MeanderingProgrammer/render-markdown.nvim',
-          opts = {
-            file_types = { "markdown", "Avante" },
-          },
-          ft = { "markdown", "Avante" },
-        },
-      },
-    },
-    {
         "github/copilot.vim",
     },
     {
@@ -61,16 +39,6 @@ require("lazy").setup( {
     {
         -- gcc motion to comment a line e.g. 4 gcc comments 4 lines
         "tpope/vim-commentary"
-    },
-    {
-        "iamcco/markdown-preview.nvim",
-        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-        ft = { "markdown" },
-        build = function() vim.fn["mkdp#util#install"]() end,
-    },
-    {
-        'wakatime/vim-wakatime',
-        lazy = false
     },
     {
         "catppuccin/nvim", name = "catppuccin", priority = 1000,
@@ -108,13 +76,6 @@ require("lazy").setup( {
     "leoluz/nvim-dap-go",
     {
         "ellisonleao/gruvbox.nvim", priority =1000, config = true
-    },
-    {
-        "letieu/harpoon-lualine",
-        dependencies = {
-            "ThePrimeagen/harpoon",
-            branch = "harpoon2",
-        }
     },
     {
         "ThePrimeagen/harpoon",
@@ -173,11 +134,6 @@ require("lazy").setup( {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate"
-	},
-	{
-		"svermeulen/text-to-colorscheme.nvim",
-		name = "text-to-colorscheme",
-		lazy = true
 	},
 	{
 		"folke/tokyonight.nvim",
