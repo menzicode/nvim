@@ -12,6 +12,9 @@ vim.keymap.set("i", "<C-j>", "<Esc>A")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
 
+-- increment a column of numbers in visual mode
+vim.api.nvim_set_keymap('v', 'g<C-v>', 'g<C-a>', { noremap = true, silent = true })
+
 -- append next line to end of this line
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "gJ", "mzgJ`z")
@@ -69,8 +72,8 @@ vim.keymap.set("n", "<leader>mv}", "0f{a<CR><Esc>f}i<CR><Esc>k")
 vim.keymap.set("n", "<leader>mv)", "0f(a<CR><Esc>f)i<CR><Esc>k")
 
 -- Add Brackets
-vim.keymap.set("n", "<leader>ad}", "^i{<CR><Esc>A<CR>}<Esc>")
-vim.keymap.set("n", "<leader>ad)", "^i(<CR><Esc>A<CR>)<Esc>")
+vim.keymap.set("n", "<leader>a{", "^i{ <Esc>ea }<Esc>")
+vim.keymap.set("n", "<leader>a(", "^i( <Esc>ea )<Esc>")
 
 -- Put after comma on newline 
 vim.keymap.set("n", "<leader>nl", "f,a<CR><Esc>")
@@ -94,4 +97,14 @@ vim.keymap.set("n", "<leader>cf", "ggVG:CopilotChatFix<CR>", {noremap = true, si
 vim.keymap.set("n", "<leader>cr", "ggVG:CopilotChatReview<CR>", {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>co", "ggVG:CopilotChatOptimize<CR>", {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>cc", "ggVG:CopilotChat<CR>", {noremap = true, silent = true})
+
+-- Indent and Unindent 2 spaces
+vim.keymap.set("v", "3", ":s/^/  /<CR>")
+vim.keymap.set("v", "2", ":s/^  //<CR>")
+
+-- Yank whole file into system clipboard
+vim.keymap.set("n", "<leader>yy", "ggVG\"+y")
+
+-- Paste from system clipboard
+vim.keymap.set("n", "<leader>pp", "\"+p")
 

@@ -1,4 +1,11 @@
+vim.g.wiki_root = '~/wiki'
+
 require("mattconfig")
+
+local function set_linebreak()
+  vim.cmd('set wrap')
+  vim.cmd('set linebreak')
+end
 
 local function set_colorscheme()
   local handle = io.popen("defaults read -g AppleInterfaceStyle 2>/dev/null")
@@ -12,6 +19,6 @@ local function set_colorscheme()
   end
 end
 
--- Call the function to set the colorscheme
 set_colorscheme()
+set_linebreak()
 -- empyBG()
