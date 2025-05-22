@@ -27,20 +27,6 @@ require("lazy").setup( {
       "HakonHarnes/img-clip.nvim",
       event = "VeryLazy",
     },
-    {
-        "github/copilot.vim",
-    },
-    {
-        "CopilotC-Nvim/CopilotChat.nvim",
-        branch = "canary",
-        dependencies = {
-            {"github/copilot.vim"},
-            {"nvim-lua/plenary.nvim"},
-        },
-        opts = {
-            debug = true,
-        }
-    },
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
     "chrisbra/Colorizer",

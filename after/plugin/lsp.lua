@@ -11,7 +11,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here 
   -- with the ones you want to install
-  ensure_installed = {'tsserver', 'rust_analyzer', 'lua_ls', 'eslint', 'ast_grep' },
+  ensure_installed = {'tsserver', 'rust_analyzer', 'lua_ls', 'ast_grep' },
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -23,16 +23,6 @@ require('mason-lspconfig').setup({
                     }
                 }
             }
-        })
-    end,
-    eslint = function()
-        require('lspconfig').eslint.setup({
-            on_attach = function(client, bufnr)
-                vim.api.nvim_create_autocmd("BufWritePre", {
-                    buffer = bufnr,
-                    command = "EslintFixAll",
-                })
-            end,
         })
     end,
   },
@@ -56,4 +46,5 @@ lsp_zero.set_preferences({
     cmp_mappings = cmp_mappings,
 	sign_icons = { }
 })
+
 

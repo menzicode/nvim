@@ -99,8 +99,8 @@ vim.keymap.set("n", "<leader>co", "ggVG:CopilotChatOptimize<CR>", {noremap = tru
 vim.keymap.set("n", "<leader>cc", "ggVG:CopilotChat<CR>", {noremap = true, silent = true})
 
 -- Indent and Unindent 2 spaces
-vim.keymap.set("v", "3", ":s/^/  /<CR>")
-vim.keymap.set("v", "2", ":s/^  //<CR>")
+vim.keymap.set("v", "3", ":s/^/  /<CR>:noh<CR>")
+vim.keymap.set("v", "2", ":s/^  //<CR>:noh<CR>")
 
 -- Yank whole file into system clipboard
 vim.keymap.set("n", "<leader>yy", "ggVG\"+y")
